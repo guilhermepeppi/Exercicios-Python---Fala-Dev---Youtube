@@ -6,18 +6,18 @@
 
 import math
 
-# Solicitar o tamanho em metros quadrados da área a ser pintada
-tamanho = float(input('Tamanho (em m²): '))
+# Tamanho da área a ser pintada em metros quadrados
+area_a_pintar = float(input("Digite o tamanho da área a ser pintada em metros quadrados: "))
 
-# Calcular a quantidade de litros de tinta necessários
-litros = tamanho / 3
+# Calcula a quantidade de litros de tinta necessários
+litros_de_tinta = area_a_pintar / 3
 
-# Arredondar para cima para garantir que seja adquirido o número correto de latas
-latas = math.ceil(litros / 18)
+# Calcula a quantidade de latas de tinta necessárias
+latas_de_tinta = math.ceil(litros_de_tinta / 18)
 
-# Calcular o preço total da compra
-preco_total = latas * 80
+# Calcula o preço total das latas de tinta
+preco_total = latas_de_tinta * 80
 
-# Exibir a quantidade de latas de tinta necessárias e o preço total
-print(f"Você precisará de {latas} latas de tinta.")
-print(f"O preço total da compra será de R$ {preco_total:.2f}.")
+# Exibe o resultado para o usuário
+print(f"Você precisará de {latas_de_tinta} latas de tinta.")
+print(f"O preço total será de R$ {preco_total:.2f}.")
